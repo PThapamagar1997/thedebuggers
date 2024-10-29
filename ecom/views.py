@@ -222,6 +222,8 @@ def search_view(request):
         return render(request,'ecom/customer_home.html',{'products':products,'word':word,'product_count_in_cart':product_count_in_cart})
     return render(request,'ecom/index.html',{'products':products,'word':word,'product_count_in_cart':product_count_in_cart})
 
+    
+
 
 # any one can add product to cart, no need of signin
 def add_to_cart_view(request,pk):
